@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="descriptiom" content="Aula 06 - HTML part II: Listas, Tabelas, e Formulários">
+    <title>Formulário de  Contato</title>
+</head>
+<body>
+    <h2>Formulário de Contato</h2>
+    <form action="/enviar" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="telefone">Telefone</label><br>
+        <input type="number" id="telefone" name="telefone" placeholder="(99) 99999-9999" required><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="senha">Senha</label><br>
+        <input type="password" name="senha"> <br><br>
+        <input type="submit" value="Enviar">
+        <br>
+        <br>
+
+        <label for="sexo">Qual o seu Sexo:</label><br>
+        <input type="radio" name="sexo" value="masculino">Masculino
+        <input type="radio" name="sexo" value="feminino">Feminino
+        <br>
+        <br>
+        <label>Onde você encontrou essa pagina? </label>
+        <select id="pesquisa">
+            <option value="facebook">facebook</option>
+            <option value="instagram">instagram</option>
+            <option value="google">google</option>
+            <option value="tiktok">tiktok</option>
+
+        </select>
+    <br>
+    <br>
+
+    <label for="termos">Aceita os termos?</label>
+<input type="checkbox" name="termos">
+
+<br>    
+<br>
+<input type="submit" value="enviar">
+
+</form>
+</body>
+</html>
